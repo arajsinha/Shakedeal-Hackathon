@@ -47,11 +47,11 @@ function sendkey(key) {
     Email.send({
 
         Host: "smtp.gmail.com",
-        Username: "removirtual@gmail.com",
-        Password: "",
+        Username: "shakedealhack@gmail.com",
+        Password: "shakedeal123$",
         To: email,
-        From: "removirtual@gmail.com",
-        Subject: "Interview Confirmation",
+        From: "shakedealhack@gmail.com",
+        Subject: "Registration Confirmation",
         Body: "Hey " + name + "<br>" + "Your key is " + key,
     })
 }
