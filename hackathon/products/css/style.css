@@ -10559,7 +10559,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 
 .ftco-intro {
-  background: #b7472a;
+  background: #2C6431;
 }
 
 .ftco-intro .intro {
@@ -10569,16 +10569,16 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 .intro {
   width: 100%;
-  background: #b7472a;
+  background: #2C6431;
   padding: 30px;
 }
 
 .intro.color-1 {
-  background: #ab4227;
+  background: #215e26;
 }
 
 .intro.color-2 {
-  background: #a23f25;
+  background: #195820;
 }
 
 .intro .icon {
