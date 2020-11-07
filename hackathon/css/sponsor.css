@@ -1,0 +1,116 @@
+/* .background{
+    background-image: url(../../images/stallbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+.spportal a {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    text-decoration: none;
+}
+
+.spportal h6 {
+    font-size: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.spportal {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+}
+
+.nav-main {
+    height: 100vh;
+}
+
+.navbar {
+    background-color: transparent;
+    display: flex;
+    /* justify-content: center;
+  align-items: center; */
+}
+
+/* #collapsibleNavbar{
+  right: 5%;
+} */
+
+body {
+    background-image: url(../../images/stallbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    padding: 2%;
+}
+
+.intro {
+    margin-top: 2%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:wght@200;300&display=swap');
+.intro h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+}
+
+.intro p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+/* IMAGE HOVER DETIALS */
+
+.parent {
+    position: relative;
+}
+
+.overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffffe5;
+    border-radius: 30px;
+}
+
+.parent:hover .overlay {
+    opacity: 0.8;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+}
+
+.company-name {
+    font-size: 30px;
+    font-weight: bold;
+}
