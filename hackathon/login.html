@@ -30,6 +30,9 @@
 </head>
 
 <body>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script src="register.js"></script>
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
@@ -41,20 +44,21 @@
                         <i class="zmdi zmdi-font"></i>
                     </span>
                     <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
-                        <input class="input100" type="text" name="City">
+                        <input class="input100" type="text" name="City" id="city_from">
                         <span class="focus-input100" data-placeholder="City"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Enter password">
                         <span class="btn-show-pass">
                             <i class="zmdi zmdi-eye"></i>
                         </span>
-                        <input class="input100" type="password" name="cid">
+                        <input class="input100" type="text" name="cid" id="cid">
                         <span class="focus-input100" data-placeholder="CustomerID"></span>
                     </div>
+                    </form>
                     <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
-                            <button class="login100-form-btn">
+                            <button class="login100-form-btn" onclick="validate();">
                                 Login
                             </button>
                         </div>
@@ -67,7 +71,6 @@
                             Sign Up
                         </a>
                     </div>
-                </form>
             </div>
         </div>
     </div>

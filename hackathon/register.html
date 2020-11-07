@@ -30,6 +30,10 @@
 </head>
 
 <body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script src="register.js"></script>
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
@@ -41,28 +45,31 @@
                         <i class="zmdi zmdi-font"></i>
                     </span>
                     <div class="wrap-input100 validate-input" data-validate="Enter Name">
-                        <input class="input100" type="text" name="name">
+                        <input class="input100" type="text" name="name"  id="name">
                         <span class="focus-input100" data-placeholder="Name"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
-                        <input class="input100" type="text" name="email">
+                        <input class="input100" type="text" name="email" id="email">
                         <span class="focus-input100" data-placeholder="Email"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Enter City">
                         <span class="btn-show-pass">
                             <i class="zmdi zmdi-eye"></i>
                         </span>
-                        <input class="input100" type="text" name="pass">
+                        <input class="input100" type="text" name="pass" id="city">
                         <span class="focus-input100" data-placeholder="City"></span>
                     </div>
-                    <div class="container-login100-form-btn">
-                        <div class="wrap-login100-form-btn">
-                            <div class="login100-form-bgbtn"></div>
-                            <button class="login100-form-btn">
-                                Sign Up
-                            </button>
-                        </div>
+                
+                </form>
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn" onclick="save_info()">
+                            Sign Up
+                        </button>
                     </div>
+                </div>
+              
                     <div class="text-center p-t-115">
                         <span class="txt1">
                             Already have an account?
@@ -71,7 +78,8 @@
                             Login
                         </a>
                     </div>
-                </form>
+            
+            
             </div>
         </div>
     </div>
